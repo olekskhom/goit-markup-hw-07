@@ -597,13 +597,13 @@ button {
 
 .footer {
   background-color: var(--maine-color);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
 }
-/* .link {
-}
-.logo {
-} */
+
 .footer-logo {
   color: var(--subwhite-color);
 }
@@ -613,6 +613,9 @@ button {
   letter-spacing: 0.02em;
   color: var(--subwhite-color);
   width: 264px;
+
+  /* 4/5 */
+  text-align: left;
 }
 
 /*  */
@@ -623,6 +626,8 @@ button {
   letter-spacing: 0.02em;
   color: var(--white-color);
   margin-bottom: 16px;
+
+  /* 4/5 */
 }
 
 .footer-social-block {
@@ -630,9 +635,9 @@ button {
 }
 
 .footer-container {
-  display: flex;
+  /* display: flex;
   align-items: baseline;
-  gap: 120px;
+  gap: 120px; */
 }
 
 .footer-social-list {
@@ -646,8 +651,44 @@ button {
 }
 
 .footer-info-box {
-  display: flex;
-  gap: 80px;
+  /* display: flex;
+  gap: 80px; */
+}
+
+/* .footer-form-block {
+
+} */
+
+.footer-info-block {
+  /* text-align: center; */
+
+  /* 4/5 */
+}
+
+/* phone */
+@media screen and (max-width: 767px) {
+  .footer-info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+  }
+
+  .footer-info-block {
+    padding-bottom: 72px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-social-media {
+    text-align: center;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
 }
 
 /* ===== portfolio ===== */
@@ -845,12 +886,15 @@ button {
 /* /modal */
 /* =========== FORM =========== */
 .footer-form-block {
-  width: 453px;
+  /* 4/5 */
+  /* width: 453px;
+
+  display: flex;
+  flex-direction: column; */
 }
 
 .footer-form {
-  display: flex;
-  gap: 24px;
+  /* 4/5 */
 }
 
 .footer-form-text {
@@ -861,13 +905,16 @@ button {
   color: var(--white-color);
 
   margin-bottom: 16px;
+
+  /* 4/5 */
 }
 
 .footer-email-form {
   padding-left: 16px;
   padding-top: 8px;
   padding-bottom: 8px;
-  width: 264px;
+  /* 4/5 */
+  /* width: 264px; */
 
   font-weight: 400;
   font-size: 12px;
@@ -884,6 +931,8 @@ button {
   outline: none;
 
   transition: border var(--animation);
+
+  /* 4/5 */
 }
 
 .footer-email-form::placeholder {
@@ -915,6 +964,9 @@ button {
   cursor: pointer;
 
   transition: background-color var(--animation);
+
+  /* 4/5 */
+  width: 166px;
 }
 
 .footer-form-btn:hover,
@@ -934,6 +986,43 @@ button {
   width: 24px;
   height: 24px;
   margin-left: 16px;
+}
+
+/* phone */
+@media screen and (max-width: 767px) {
+  .footer-form {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .footer-form-text {
+    text-align: center;
+  }
+
+  .footer-email-form {
+    width: 396px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form-block {
+    width: 453px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-form {
+    display: flex;
+    gap: 24px;
+  }
+
+  .footer-email-form {
+    width: 264px;
+  }
 }
 
 /* ===== modal form ====== */
