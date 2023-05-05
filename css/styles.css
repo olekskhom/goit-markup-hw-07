@@ -93,7 +93,6 @@ button {
   width: 456px;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
 }
 
 .header-logo-link {
@@ -105,8 +104,11 @@ button {
 }
 
 .menu {
-  display: flex;
-  gap: 40px;
+  /* 5/5 */
+  /* display: flex;
+  gap: 40px; */
+
+  display: none;
 }
 
 .menu-link {
@@ -168,11 +170,12 @@ button {
   font-style: normal;
 }
 .contact-list {
-  display: flex;
-  gap: 40px;
+  /* 5/5 */
+  /* display: flex;
+  gap: 40px; */
+
+  display: none;
 }
-/* .contact-item {
-} */
 
 .contact-link {
   color: var(--second-color);
@@ -180,14 +183,67 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 24px 0;
+  /* 5/5 */
+  /* padding: 24px 0; */
   display: block;
+
   /* 21/04 */
   transition: color var(--animation);
 }
 .contact-link:hover,
 .contact-link:focus {
   color: var(--subaccent-color);
+}
+
+.hamburger-icon {
+  stroke: var(--maine-color);
+}
+
+/* phone <428*/
+@media screen and (max-width: 767px) {
+  .header-logo-link {
+    padding-top: 24px;
+    padding-bottom: 22px;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  .hamburger-icon {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-logo-link {
+    margin-right: 120px;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px 40px;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1158px) {
+  .contact-list {
+    display: flex;
+    flex-direction: row;
+    gap: 12px 40px;
+  }
+
+  .contact-link {
+    padding: 24px 0;
+  }
+
+  .header-logo-link {
+    margin-right: 76px;
+  }
 }
 
 /* ===== /header ===== */
