@@ -408,8 +408,9 @@ button {
 
 .team {
   background-color: var(--subwhite-color);
-  padding-top: 120px;
-  padding-bottom: 120px;
+
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 /* .section-title {
 } */
@@ -425,8 +426,30 @@ button {
   margin-bottom: 72px;
 }
 .team-list {
+  /* 5/5 */
+  /* display: flex;
+  gap: 24px; */
+
   display: flex;
-  gap: 24px;
+  row-gap: 72px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  .team-list {
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1158px) {
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .team-item {
@@ -497,6 +520,7 @@ button {
 .social-icon-item {
   fill: #f4f4fd;
 }
+
 /* ===== /team ===== */
 
 /* CUSTOMERS */
