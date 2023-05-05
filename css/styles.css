@@ -195,6 +195,12 @@ button {
   color: var(--subaccent-color);
 }
 
+.mobile-btn {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
 .hamburger-icon {
   stroke: var(--maine-color);
 }
@@ -209,7 +215,8 @@ button {
 
 /* tablet */
 @media screen and (min-width: 768px) {
-  .hamburger-icon {
+  .hamburger-icon,
+  .mobile-btn {
     display: none;
   }
 
