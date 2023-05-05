@@ -667,6 +667,12 @@ button {
 
 /* phone */
 @media screen and (max-width: 767px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+  }
+
   .footer-info-box {
     display: flex;
     flex-direction: column;
@@ -675,8 +681,6 @@ button {
   }
 
   .footer-info-block {
-    padding-bottom: 72px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -689,6 +693,31 @@ button {
 
 /* tablet */
 @media screen and (min-width: 768px) {
+  /* .footer-container:not(:last-child) {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  } */
+  .footer-container {
+    padding-left: 93px;
+  }
+  .footer-social-block {
+    position: absolute;
+    top: 0;
+  }
+
+  .footer-container {
+    position: relative;
+  }
+
+  .footer-info-block {
+    display: inline-block;
+    margin-bottom: 72px;
+    margin-right: 24px;
+  }
+  .footer-info-box {
+    display: inline-block;
+  }
 }
 
 /* ===== portfolio ===== */
