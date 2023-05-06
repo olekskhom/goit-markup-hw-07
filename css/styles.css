@@ -81,6 +81,48 @@ button {
 /* /COMPOMENTS */
 /* ===== /основні ===== */
 /* ===== header ===== */
+
+/* js-mobile */
+.js-menu-container {
+  display: none;
+}
+
+/* .js-open-menu {
+  display: flex;
+} */
+
+.is-open {
+  display: block;
+}
+/* 
+.page-header {
+  position: relative;
+} */
+
+/* MOBILE-MENU */
+.mobile-menu {
+  height: 796px;
+  background-color: #8e8f99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+/*  */
+/* mobile-close-btn */
+.mobile-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  border-radius: 50%;
+
+  border: transparent;
+  cursor: pointer;
+}
+
 .page-header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -206,13 +248,6 @@ button {
 }
 .hamburger-icon {
   stroke: var(--maine-color);
-}
-
-/* MOBILE-MENU */
-.mobile-menu {
-  width: 428px;
-  height: 796px;
-  background-color: #8e8f99;
 }
 
 /* phone <428*/
@@ -490,7 +525,7 @@ button {
   .advantages-text {
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
   }
 }
 
