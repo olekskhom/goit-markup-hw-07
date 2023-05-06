@@ -39,7 +39,7 @@ p {
     width: 736px;
   }
 }
-
+/* desktop */
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
@@ -241,7 +241,8 @@ button {
   .contact-list {
     display: flex;
     flex-direction: row;
-    gap: 12px 40px;
+    /* 6/5 */
+    /* gap: 12px 40px; */
   }
 
   .contact-link {
@@ -272,20 +273,33 @@ button {
   margin-left: auto;
   margin-right: auto;
   /*  */
-  padding-top: 188px;
-  padding-bottom: 188px;
+
+  /* 6/5 */
+  /* padding-top: 188px;
+  padding-bottom: 188px; */
+  padding-top: 112px;
+  padding-bottom: 112px;
 }
 .page-title {
-  font-weight: 700;
+  /* 6/5 */
+  /* font-weight: 700;
   font-size: 56px;
-  line-height: 1.07;
+  line-height: 1.07; */
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-color);
   /*  */
   /* max-width: 496px; */
   max-width: 526px;
-  margin-bottom: 48px;
+
+  /* 6/5 */
+  /* margin-bottom: 48px; */
+  margin-bottom: 72px;
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -304,7 +318,12 @@ button {
   border-radius: 4px;
   /*  */
   padding: 16px 32px;
-  margin-left: 480px;
+
+  /* 6/5 */
+  /* margin-left: 480px; */
+  margin-left: auto;
+  margin-right: auto;
+
   display: block;
   min-width: 169px;
   /* 21/4 */
@@ -313,6 +332,16 @@ button {
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--subaccent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .page-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+
+    margin-bottom: 36px;
+  }
 }
 
 /* ===== /hero ====== */
