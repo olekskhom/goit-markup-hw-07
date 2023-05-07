@@ -1255,6 +1255,13 @@ button {
     width: 264px;
   }
 }
+/* phone-input-width */
+
+@media screen and (min-width: 200px) and (max-width: 398px) {
+  .footer-email-form {
+    min-width: 280px;
+  }
+}
 
 /* ===== modal form ====== */
 
