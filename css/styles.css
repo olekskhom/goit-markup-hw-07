@@ -102,12 +102,74 @@ button {
 /* MOBILE-MENU */
 .mobile-menu {
   height: 796px;
-  background-color: #8e8f99;
+  /* display: flex;
+  flex-direction: column; */
+
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
+
+  background-color: var(--white-color);
+}
+
+.mobile-menu {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+}
+
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  margin-bottom: 284px;
+}
+
+.mobile-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+
+  color: var(--maine-color);
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
+  color: var(--accent-color);
+}
+.mobile-menu-contact {
+  margin-bottom: 48px;
+}
+
+.mobile-menu-contact-link-tel {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--accent-color);
+
+  margin-bottom: 40px;
+  display: block;
+}
+
+.mobile-menu-contact-link-email {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+  color: var(--second-color);
+}
+
+.mobile-menu-social-list {
+  display: flex;
+  gap: 56px;
+
+  margin-top: auto;
 }
 
 /*  */
