@@ -1176,6 +1176,12 @@ button {
   transition: fill var(--animation);
 }
 
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 392px;
+  }
+}
+
 /* /modal */
 /* =========== FORM =========== */
 .footer-form-block {
