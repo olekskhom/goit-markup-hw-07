@@ -84,24 +84,22 @@ button {
 
 /* js-mobile */
 .js-menu-container {
-  display: none;
+  /* display: none; */
 
-  /* opacity: 0;
+  opacity: 0;
   visibility: hidden;
-  pointer-events: none; */
+  pointer-events: none;
+
+  transition: opacity var(--animation);
 }
 
-/* .js-open-menu {
-  display: flex;
-} */
+.js-menu-container.is-open {
+  /* display: block; */
 
-.is-open {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
-/* 
-.page-header {
-  position: relative;
-} */
 
 /* MOBILE-MENU */
 
@@ -136,12 +134,6 @@ button {
   padding-top: 80px;
   padding-bottom: 40px;
   padding-left: 40px;
-}
-
-.mobile-menu {
-  /* padding-top: 80px;
-  padding-bottom: 40px;
-  padding-left: 40px; */
 }
 
 .mobile-menu-list {
