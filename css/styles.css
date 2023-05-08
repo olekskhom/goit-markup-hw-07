@@ -189,12 +189,24 @@ button {
 
   border-radius: 50%;
 
-  border: transparent;
+  /* border: transparent; */
   cursor: pointer;
 
   /* 8/5 */
   width: 24px;
   height: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--white-color);
+  /* opacity: 0.1; */
+
+  border: 1px solid #e7e9fc;
+}
+.mobile-modal-close-icon {
+  fill: var(--maine-color);
 }
 
 @media screen and (max-width: 767px) {
