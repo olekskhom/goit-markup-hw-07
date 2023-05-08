@@ -153,6 +153,11 @@ button {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
+.studio-mobile-menu-link,
+.portfolio-mobile-menu-link {
+  color: var(--accent-color);
+}
+
 .mobile-menu-link:hover,
 .mobile-menu-link:focus {
   color: var(--accent-color);
