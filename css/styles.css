@@ -126,6 +126,13 @@ button {
   background-color: var(--white-color);
 }
 
+.mobile-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
 .mobile-menu {
   /* padding-top: 80px;
   padding-bottom: 40px;
@@ -155,6 +162,7 @@ button {
 }
 .mobile-menu-contact {
   margin-bottom: 48px;
+  margin-top: auto;
 }
 
 .mobile-menu-contact-link-tel {
@@ -181,7 +189,7 @@ button {
   display: flex;
   gap: 56px;
 
-  margin-top: auto;
+  /* margin-top: auto; */
 }
 
 /*  */
