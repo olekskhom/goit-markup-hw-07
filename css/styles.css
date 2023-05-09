@@ -167,6 +167,10 @@ button {
   margin-top: auto;
 }
 
+.mobile-menu-contact-item:first-child {
+  margin-bottom: 40px;
+}
+
 .mobile-menu-contact-link-tel {
   font-weight: 700;
   font-size: 26px;
@@ -175,7 +179,7 @@ button {
   text-transform: capitalize;
   color: var(--accent-color);
 
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   display: block;
 }
 
@@ -281,7 +285,7 @@ button {
 }
 
 .header-logo-link {
-  margin-right: 76px;
+  /* margin-right: 76px; */
 }
 
 .header-logo {
@@ -927,6 +931,9 @@ button {
 .customers-item-link:focus {
   border-color: var(--subaccent-color);
   color: #404bbf;
+}
+.customers-link {
+  height: 88px;
 }
 
 .customers-title {
