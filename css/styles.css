@@ -209,6 +209,12 @@ button {
   }
 }
 
+@media screen and (orientation: landscape) {
+  .mobile-container {
+    overflow: auto;
+  }
+}
+
 /*  */
 /* mobile-close-btn */
 .mobile-close-btn {
@@ -1360,6 +1366,13 @@ button {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+
+@media screen and (orientation: landscape) {
+  .backdrop {
+    overflow: auto;
+  }
+}
+
 .modal-close-btn {
   width: 24px;
   height: 24px;
