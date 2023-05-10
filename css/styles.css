@@ -31,7 +31,7 @@ p {
 
   padding: 0 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 /* tablet */
@@ -84,8 +84,6 @@ button {
 
 /* js-mobile */
 .js-menu-container {
-  /* display: none; */
-
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -94,8 +92,6 @@ button {
 }
 
 .js-menu-container.is-open {
-  /* display: block; */
-
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -1164,13 +1160,17 @@ button {
   padding: 96px 0;
 }
 
-.portfolio-menu {
-  /* 10/5 */
+@media only screen and (max-width: 767px) {
+  .portfolio {
+    padding: 48px 0;
+  }
+}
 
-  /* display: flex;
-  gap: 24px;
-  justify-content: center;
-  margin-bottom: 72px; */
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .portfolio {
+    padding: 64px 0;
+    padding-bottom: 96px;
+  }
 }
 
 @media only screen and (min-width: 280px) {
