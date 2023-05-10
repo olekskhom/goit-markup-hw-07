@@ -1118,7 +1118,8 @@ button {
   } */
   .footer-container {
     /* padding-left: 93px; */
-    margin-left: 93px;
+    /* margin-left: 93px; */
+    width: 552px;
   }
   .footer-social-block {
     position: absolute;
